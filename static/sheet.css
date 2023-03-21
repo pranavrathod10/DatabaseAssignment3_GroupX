@@ -1,0 +1,46 @@
+.heading{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    position: center;
+    font-size: 2em;
+    background-color: #282184;
+    color: #F8F7FF;
+    font-weight: bold;
+
+}
+
+.tables{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TableDiv{
+    padding-top: 2em;
+    padding-bottom: 2em;   
+}
+
+.Buttons{
+    padding-top: 2em;
+    padding-bottom: 2em;  
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.balign{
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.btn{
+    background-color: #282184; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}

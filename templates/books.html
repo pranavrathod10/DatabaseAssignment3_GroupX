@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+  <table border = 1>
+    <tr>
+      <td>Booh_ID</td>
+      <td>Title</td>
+      <td>Edition</td>
+      <td>Copies</td>
+      <td>Availaibility</td>
+      <td>Author_ID</td>
+  </tr>
+    {% for book in rows %}
+    <tr>
+      <td> {{book[0]}} </td>
+      <td> {{book[1]}} </td>
+      <td> {{book[2]}} </td>
+      <td> {{book[3]}} </td>
+      <td> {{book[4]}} </td>
+      <td> {{book[5]}} </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+
+</body>
+</html>

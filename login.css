@@ -1,0 +1,61 @@
+body{
+    background-image: url("BG.png");
+}
+
+.label{
+    display: inline-block;
+    font-weight: 400;
+    font-family: Roboto;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-style: italic;
+}
+
+input{
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: italic;
+    height: 30px;
+    width: 250px;
+    margin: 0;
+}
+
+td{
+    height: 20px;
+    width: 300px;
+}
+
+.login{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.69);
+    width: 768px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.Submit{
+    width: 100px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: italic;
+    padding: 0%;
+    border: 0;
+    margin: 3% 43%;
+}
+
+.right{
+    text-align: right;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: italic;
+}
+
+a{
+    color: rgb(91, 198, 61);
+}

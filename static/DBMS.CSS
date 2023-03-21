@@ -1,0 +1,343 @@
+/* Global Styles */
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    margin: 0;
+    padding: 3px;
+
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.content{
+    padding-left: 15%;
+    padding-right: 15%;
+    margin:0;
+}
+
+img {
+	max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+
+header {
+	background-color: #028aa5;
+	color: #fff;
+	height: 45px;
+    padding: 20px;
+    margin: 0;
+}
+
+h1{
+    margin:0;
+}
+
+h2{
+    margin:0;
+    padding: 0;
+}
+
+h3{
+    display: inline;
+}
+
+.head{
+    float: left;
+    margin: 0;
+}
+
+.navbar{
+    float:right;
+}
+
+nav {
+	float: right;
+	margin-top: 10px;
+}
+.outer {
+    width: 100%;
+
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 90;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/* Main Styles */
+
+main {
+	margin: 20px;
+}
+
+.book-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.book-list li {
+	display: inline-block;
+	margin: 0 10px 20px 0;
+	vertical-align: top;
+	width: calc(33.33% - 10px);
+}
+
+.book-list a {
+	color: #333;
+	text-decoration: none;
+}
+
+.book-list h3 {
+	font-size: 20px;
+	margin: 10px 0 5px 0;
+}
+
+.book-list p {
+	font-size: 14px;
+	margin: 5px 0;
+}
+
+/* Search Styles */
+
+form {
+	margin-top: 20px;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+input[type="text"] {
+	border: 1px solid #333;
+	padding: 5px;
+	width: 250px;
+}
+
+button[type="submit"] {
+	background-color: #333;
+	border: none;
+	color: #fff;
+	padding: 5px 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #666;
+}
+
+/* Footer Styles */
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.container{
+    width: 50%;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    background-image: url("lib\ 4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    border: px;
+    border-color:white;
+    border-style: solid;
+    animation: 2s ease-in-out mymove;
+  }
+  @keyframes mymove {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.img1{
+    position: relative;
+    width: 100%;
+    animation: mymove 5s infinite;
+}  
+.quote{
+    width: 70%;
+    display: block;
+    position: relative;
+    top: 25%;
+    font-family: 'Roboto', sans-serif;
+    left: 130%;
+    animation: 2s ease-in-out mymove2;
+
+}    
+    
+@keyframes mymove2 {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}   
+.thought{
+    margin: 5%;
+    color: black;
+    display: inline-block;
+    font-size:20pt;
+}
+.by{ 
+    font-family: 'Roboto', sans-serif;
+    position: relative;  
+    bottom:100% ;
+    padding: 5px;
+}
+.container2{
+    position:relative;
+    left: 50%;
+    width: 50%;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    background-image: url("lib2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 0;
+    border: 0px;
+    border-color:white;
+    border-style: solid;
+    animation: 2s ease-in-out mymove;
+}
+@keyframes mymove {
+  0%{
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0%);
+      opacity: 1;
+  }
+}
+  .quote2{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 25%;
+    animation: 2s ease-in-out mymove2;
+
+}    
+    
+@keyframes mymove2 {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}   
+  .para{
+    margin: 5%;
+    color: rgb(34, 33, 33);
+    display: inline-block;
+    font-size:10pt;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    right:100%;
+    text-align: justify;
+    text-justify:distribute-all-lines;
+ }
+ .container3{
+    width: 50%;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    background-image: url("lib8.jpg");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 0;
+    border: px;
+    border-color:white;
+    border-style: solid;
+    animation: 2s ease-in-out mymove;
+}
+@keyframes mymove {
+  0%{
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0%);
+      opacity: 1;
+  }
+}
+
+  .quote3{
+    width: 90%;
+    display: block;
+    position: relative;
+    top: 25%;
+    font-family: 'Roboto', sans-serif;
+    left: 100%;
+    animation: 2s ease-in-out mymove2;
+
+}    
+    
+@keyframes mymove2 {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}   
+  .para2{
+    color: black;
+    margin: 5%;
+    color: rgb(34, 33, 33);
+    display: inline-block;
+    font-size:10pt;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left:10%;
+    text-align: justify;
+    text-justify:distribute-all-lines;
+ }

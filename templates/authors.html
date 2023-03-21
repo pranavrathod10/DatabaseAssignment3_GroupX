@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "static/sheet.css">
+    <title>authors</title>
+  </head>
+  <body>
+    <div class = "heading">Library Management System</div>
+    <div class = "TableDiv" >
+        <table border = 1 class="tables" >
+            <tr>
+                <td>author_ID</td>
+                <td>author_Name </td> 
+            </tr>
+        
+            {% for user  in userDetails %}
+            <tr>
+                {% for i  in user %}
+                
+                <td>{{i}}</td>
+                
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+  </body>
+  </html>
