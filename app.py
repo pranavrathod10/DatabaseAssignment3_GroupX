@@ -15,7 +15,7 @@
 # if __name__ == '__main__':
 #     app.run(debug = True)
 
-from flask import Flask, render_template, request, redirect, flash
+from flask import Flask, render_template, request, redirect, flash, session
 from flask_mysqldb import MySQL
 import yaml
 
@@ -32,6 +32,53 @@ app.config['MYSQL_DB'] = db['mysql_db']
 mysql = MySQL(app)
 
 @app.route('/', methods=['GET', 'POST'])
+def login():
+    
+    if request.method == 'POST':
+        
+        email = request.values.get("email")
+        password = request.values.get('password').encode('utf-8')
+        
+        cur = mysql.connection.cursor()
+        cur.execute("SELECT * FROM login_db WHERE email = %s", (email,))
+        user = cur.fetchone()
+        cur.close()
+        print(user)
+        passcode = 0
+        if 1:
+            if user: 
+                passcode = user[1].encode('utf-8')
+
+            if password == passcode:
+                session['user_name'] = user[0]
+                return redirect('/DBMS')
+            else:
+                # error = 'Invalid email or password.'
+                return redirect('/dbmsuser')
+        # else:
+        #     error = 'Invalid email or password.'    
+        #     return render_template('loginpage.html', error=error)
+
+    return render_template('loginpage.html')
+
+@app.route('/dbmsuser', methods=['GET', 'POST'])
+def dbms():
+    if request.method == 'POST':
+        # Fetch form data
+        userDetails = request.form
+        book_name = userDetails['name']
+        cur = mysql.connection.cursor()
+        resultValue = cur.execute("select * from book where title = '" + book_name + "';")  #LIKE '" + name + "%';
+        if resultValue > 0:
+            temp = cur.fetchall()
+            return render_template('books.html', rows = temp)
+        
+        mysql.connection.commit()
+        cur.close()
+        return 'not'
+    return render_template('dbmsuser.html')
+
+@app.route('/DBMS', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         # Fetch form data
